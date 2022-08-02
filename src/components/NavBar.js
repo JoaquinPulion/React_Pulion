@@ -1,3 +1,5 @@
+import CartWidget from "./CartWidget";
+
 export default function NavBar(){
     return(
 <nav className="navbar navbar-expand-lg bg-light">
@@ -21,6 +23,7 @@ export default function NavBar(){
           <a className="nav-link disabled">Disabled</a>
         </li>
       </ul>
+      <CartWidget/>
     </div>
   </div>
 </nav>

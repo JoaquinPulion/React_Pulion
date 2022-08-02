@@ -1,11 +1,37 @@
-import logo from './logo.svg';
 import './App.css';
 import NavBar from './components/NavBar';
+import Card from './components/Card/Card';
+import Button from './components/Button/Button';
+import ItemListContainer from './components/ItemListContainer';
 
 function App() {
+
+
+  const ItemList = {
+    texto: "Lista de productos"
+  }
+
+  const dataProducts = [
+  {
+    name: "Teclado Gamer",
+    price: 3000,
+    imgurl: "https://picsum.photos/280/260",
+    description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam"
+  },
+  {
+    name: "Mouse Gamer",
+    price: 5000,
+    imgurl: "https://picsum.photos/280/260",
+    description: "Lorem ipsum dolor sit adipisicing elit. Quisquam"
+  },
+  ]
   return (
     <div className="App">
       <NavBar/>
+      <Button type="info" text="click me"/>
+      <ItemListContainer greeting={ItemList}/>
+      <Card data={dataProducts[0]}/>
+      <Card data={dataProducts[1]}/>
     </div>
   );
 }

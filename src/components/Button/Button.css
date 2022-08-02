@@ -1,0 +1,7 @@
+.bton{
+    padding: 5px 10px;
+    color: white;
+    max-width: 150px;
+    background-color: rgb(136, 75, 64);
+    border-radius: 10px;
+}
