@@ -2,17 +2,17 @@ import React from 'react'
 
 function ItemCount(props) {
     console.log(props.stock);
-    const [clicks, setClicks] = React.useState(1)
+    const [Count, setCount] = React.useState(1)
 
     const handleIncrement= () => {
-            if (clicks < props.stock) {
-              setClicks(clicks+1)
+            if (Count < props.stock) {
+              setCount(Count+1)
             }
     }
 
     const handleDecrement= () => {
-      if (clicks > props.initial) {
-        setClicks(clicks-1)
+      if (Count > props.initial) {
+        setCount(Count-1)
       }
     }
     
@@ -20,7 +20,7 @@ function ItemCount(props) {
     <div>
     <h1>ItemCount</h1>
     <button onClick={handleIncrement}>+</button>
-    <h3>Clicks: {clicks}</h3>
+    <h3>Stock: {Count}</h3>
     <button onClick={handleDecrement}>-</button>
     </div>
   )
