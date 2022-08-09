@@ -1,5 +1,5 @@
 import Button from "../Button/Button";
-import "./Card.css"
+import "./card.css"
 
 function Card(props) {
 
