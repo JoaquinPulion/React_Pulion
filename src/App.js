@@ -4,6 +4,7 @@ import Button from './components/Button/Button';
 import ItemListContainer from './ItemListContainer';
 import ItemCount from './components/ItemCount/ItemCount';
 import CardWithObjects from './components/Card/CardWithObjects';
+import ItemDetailContainer from './components/ItemDetail/ItemDetailContainer';
 
 function App() {
 
@@ -31,6 +32,7 @@ function App() {
       <NavBar/>
       <Button type="info" text="click me"/>
       <ItemListContainer greeting={ItemList}/>
+      <ItemDetailContainer/>
       <CardWithObjects data={dataProducts[0]}/>
       <CardWithObjects data={dataProducts[1]}/>
       <ItemCount initial={1} stock={4}/>
